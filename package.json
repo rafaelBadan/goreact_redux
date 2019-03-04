@@ -2,7 +2,7 @@
   "name": "goreact_redux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yourUserName.github.io/goreact_redux",
+  "homepage": "https://rafaelBadan.github.io/goreact_redux",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.3",
