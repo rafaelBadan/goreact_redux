@@ -10,7 +10,15 @@ const sagaMiddleware = createSagaMiddleware();
 
 middlewares.push(sagaMiddleware);
 
-const tronMiddleware = process.env.NODE_ENV === 'development' ? console.tron.createStore : () => {};
+const tronMiddleware = process.env.NODE_ENV === 'development' ? console.tron.createEnhancer : () => {};
+
+// function tronMiddleware() {
+//   if (process.env.NODE_ENV === 'development') {
+//     return console.tron.createEnhancer;
+//   }
+
+//   return () => {};
+// }
 
 const store = createStore(
   reducers,
